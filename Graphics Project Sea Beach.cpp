@@ -235,35 +235,9 @@ glEnd();
 
 void umbrella()
 {
-
-//sea_beach_umbrella()
-glPushMatrix();
-    glColor3ub(238,39,64);
-    drawFilledHalfCircle(800,200,90);
-    glLineWidth(3);
-    glBegin(GL_LINES);
-    glVertex2f(800,200);
-    glVertex2f(800,30);
-    glEnd();
-    glPopMatrix();
-
-
-
-
+//chair
     glPushMatrix();
-    //sea_beach_umbrella()
-//glScaled(1,1,0);
-    glColor3ub(238,39,64);
-    drawFilledHalfCircle(500,200,90);
-    glLineWidth(3);
-    glBegin(GL_LINES);
-    glVertex2f(500,200);
-    glVertex2f(500,30);
-    glEnd();
-    glPopMatrix();
 
-    //chair
-    glPushMatrix();
     glColor3ub(255,100,100);
     glBegin(GL_QUADS);
     glVertex2f(510,60);
@@ -271,29 +245,15 @@ glPushMatrix();
     glVertex2f(580, 30);
     glVertex2f(560, 60);
     glEnd();
-    glLineWidth(50);
+
+    //glLineWidth(50);
     glBegin(GL_QUADS);
     glVertex2f(660,30);
     glVertex2f(570,30);
     glVertex2f(570,40);
     glVertex2f(660,40);
     glEnd();
-    glPopMatrix();
-
-    glPushMatrix();
-    //sea_beach_umbrella()
-
-    glColor3ub(238, 39, 64);
-    //glColor3ub(0, 0, 255);
-    drawFilledHalfCircle(200,200,90);
-    glLineWidth(3);
-    glBegin(GL_LINES);
-    glVertex2f(200,200);
-    glVertex2f(200,30);
-    glEnd();
-    glPopMatrix();
-
-    //chair
+//chair
     glPushMatrix();
     glColor3ub(255,100,100);
     glBegin(GL_QUADS);
@@ -327,6 +287,48 @@ glPushMatrix();
     glVertex2f(870,30);
     glVertex2f(870,40);
     glVertex2f(960,40);
+    glEnd();
+    glPopMatrix();
+//sea_beach_umbrella()
+glPushMatrix();
+    glColor3ub(238,39,64);
+    drawFilledHalfCircle(800,200,90);
+    glLineWidth(3);
+    glBegin(GL_LINES);
+    glVertex2f(800,200);
+    glVertex2f(800,30);
+    glEnd();
+    glPopMatrix();
+
+
+
+
+    glPushMatrix();
+    //sea_beach_umbrella()
+//glScaled(1,1,0);
+    glColor3ub(238,39,64);
+    drawFilledHalfCircle(500,200,90);
+    glLineWidth(3);
+    glBegin(GL_LINES);
+    glVertex2f(500,200);
+    glVertex2f(500,30);
+    glEnd();
+    glPopMatrix();
+
+
+
+    glPopMatrix();
+
+    glPushMatrix();
+    //sea_beach_umbrella()
+
+    glColor3ub(238, 39, 64);
+    //glColor3ub(0, 0, 255);
+    drawFilledHalfCircle(200,200,90);
+    glLineWidth(3);
+    glBegin(GL_LINES);
+    glVertex2f(200,200);
+    glVertex2f(200,30);
     glEnd();
     glPopMatrix();
 
@@ -666,11 +668,6 @@ void ship(){
 
     glPopMatrix();
 
-
-}
-
-void bench()
-{
 
 }
 
@@ -1088,7 +1085,7 @@ void draw_object()
         umbrella();
         //ship();
          sun();
-         bench();
+         //bench();
 
 
 
